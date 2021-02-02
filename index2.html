@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title> Exemple de rapport de projet</title>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+
+</head>
+
+<body>
+
+<header><pre>P.Moreaux		Exemple de rapport de projet		1/2 </pre></header>
+
+<section>
+<h2>Introduction</h2>
+
+<p>Ce document est un exemple de rapport de projet réalisé avec le système PJR configuré pour
+l’UV "Projet" de la Licence d’Informatique de l’UFR de Sciences Exactes et Naturelles de Reims. Il
+est destiné à servir de modèle et de base de départ pour les rapports effectifs des étudiants.
+L’objectif du système PJR est de simplifier le travail de mise en forme du texte (haut et bas de
+page, titres, table des matières, etc.) et d’assurer une présentation homogène de tous les rapports
+d’une même formation.
+Pour rédiger un véritable rapport, il suffit de compléter ou créer les différents fichiers que doit
+comporter un rapport (sec. 1). Lorsque cela est fait, on lance la compilation LATEX2e. et on obtient le
+rapport complet (fichier <kbd>pjr.dvi</kbd>).
+La section 4 présente les environnements supplémentaires disponibles avec PJR et la section 3
+détaille les quelques macros spécifiques au système PJR. La section 2 donne un exemple d’inclusion
+de dessin (Postscript) dans le document.
+Le futur auteur d’un rapport qui ne connaît pas le systême LATEX, devra lire le document de T.
+Oetiker [5] sur LATEX2e (ou un document équivalent) s’il veut comprendre le présent texte (ce qu’il doit
+réussir à faire !).
+L’adaptation du système PJR à d’autres formations, travail qui est du ressort des responsables
+de ces formations, est assurée par le fichier de configuration <kbd>pjrcfg.tex</kbd>.
+Nouveautés 2002/2003 :
+<strong>accents</strong> le texte d’entrée est au format Latin1 (lettres accentuées).
+<strong>pdf</strong> la génération de fichiers pdf est intégrée.
+<strong>exposés</strong> un package LATEX2e pour réaliser des présentations écran (EZTALK) sera bientôt disponible et permettra de réaliser du «copier/coller» avec les sources LATEX2e d’un rapport PJR.
+Merci de signaler tout problème à l’auteur (email : <kbd>patrice.moreaux@univ-reims.fr</kbd>)</p>
+</section>
+<section>
+<h2>1 Aperçu sur le système PJR</h2>
+
+<p>Pour composer son rapport, l’auteur complète, modifie ou crée simplement les quelques fichiers,
+suivant, présentés dans l’ordre de lecture du rapport qui n’est pas, en général, celui de rédaction :<br/>
+<kbd><strong>defs.tex</strong></kbd> contient les définitions concernant les titre, sous-titre, nom de (des) auteur(s), dates, etc.<br/>
+<kbd><strong>frabstra.tex</strong></kbd> contient le résumé en Français ainsi que la liste des mots clés du rapport.<br/>
+<kbd><strong>usabstra.tex</strong></kbd> contient le résumé en Anglais ainsi que la liste des mots clés du rapport.<br/>
+<kbd><strong>intro.tex</strong></kbd> contient l’introduction du rapport.<br/>
+<kbd><strong>body.tex</strong></kbd> contient le corps du rapport. Il est conseillé d’utiliser des commandes LATEX2e d’inclusion
+de fichiers correspondant à un découpage logique du texte.<br/>
+<kbd><strong>conclu.tex</strong></kbd> contient la conclusion du rapport.<br/>
+<kbd><strong>appendix.tex</strong></kbd> contient les annexes du rapport (même principe que pour le corps du rapport).<br/>
+<kbd><strong>biblio.bib</strong></kbd> contient les références bibliographiques pour le rapport, au format BibTex.<br/></p>
+<p>Lorsque ces fichiers sont à jour, il suffit de lancer la compilation :</p>
+	<ol>
+		<li>compiler une première fois le fichier pjr.tex</li>
+		<li>lancer BibTex</li>
+		<li>recompiler</li>
+		<li>relancer BibTex si nécessaire</li>
+		<li>recompiler</li>
+	</ol>
+
+<img src="./img/CaptureImagePourRapport.PNG" alt="Système PJR"  />
+<p class="Legende">FIG. 1: Exemple de GSPN avec transition PH</p>
+
+<p>On obtient le fichier <kbd>pjr.dvi</kbd>. Il est alors possible de le visualiser ou de l’imprimer après l’avoir
+converti en format d’impression (avec <kbd>dvips</kbd> par exemple).</p><p>
+Les fichiers de commandes sous MS-DOS <kbd>t.bat</kbd> et <kbd>pjr.bat</kbd> permettent de compiler une partie
+ou l’ensemble (regroupant donc toutes les phases ci-dessus) du rapport. Ils doivent être adaptés à
+chaque configuration et sont facilement transposables en scripts sous UNIX.
+Le fichier <kbd>pjx.dvi</kbd> est la version <kbd>.dvi</kbd> du présent texte. <kbd>pjx.ps</kbd> en est la version Postscript :</p><p>
+C’est celle-ci qui permet de vérifier le résultat final avec le dessin. La version pdf est aussi fournie
+(<kbd>pjr.pdf</kbd>). Dans la configuration par défaut, le rapport utilise des fontes Postscript ce qui permet
+une génération du format pdf de bonne qualité. Pour cela, il faut générer la version Postscript par la
+commande <kbd>dvips -P amz -P cmz pjr</kbd> puis la version pdf par la commande <kbd>ps2pdf pjr.ps
+pjr.pdf</kbd> ou par la fonction <kbd>	convert</kbd> de Ghostview avec le choix <kbd>pdfwrite</kbd>.</p>
+
+</section>
+
+
+<footer> 
+
+	<nav>
+		<ul>
+			<li><a href="./index.html">HOME</a></li>
+			<li><a href="./index2.html">Introduction</a></li>
+			<li><a href="./index2.html">Aperçu sur le système PJR</a></li>
+			<li><a href="./index3.html">Exemple d'inclusion de graphique</a></li>
+			<li><a href="./index3.html">Macros du système PJR</a></li>
+			<li><a href="https://www.rampacek.fr/www/IMG/pdf/pjx.pdf" target="_BLANK">lien vers le rapport original</a></li>
+		</ul>
+	</nav>
+
+</footer>
+</body>
+</html>

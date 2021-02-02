@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Exemple de rapport de projet</title>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+
+<body>
+
+<header class="left_header">Université de REIMS<br/>hampagne-Ardenne<br/>UFR de Sciences<br/> Exactes et Naturelles</header>
+
+<h1>Exemple de rapport de projet</h1>
+<h2>système ProJect Report (PJR)</h2>
+<p class="center">P.Moreauex</p>
+<img class="displayed" src="./img/exemple-projet-professionnel.PNG" width="450" />
+
+
+<p class="center">Licence d'Informatique <br/>UV Projet<br/>2004/2005</p>
+
+
+<section>
+<h2>Résumé</h2>
+
+<p>Ce document est un exemple et un modèle pour la rédaction de rapport de projet de l’UFR de
+Sciences Exactes et Naturelles de l’Université de Reims Champagne-Ardenne. On explique la structure d’un rapport et on montre comment utiliser les particularités du système PJR.
+<br/><strong>Mots-clés</strong> : bibliographie, conclusion, introduction, projet, résumé.</p>
+</section>
+<section>
+<h2>Abstract</h2>
+<p>This document is an example and a model for writing a report project at the "UFR de Sciences
+Exactes et Naturelles" of the "Université de Reims Champagne-Ardenne" (France). It contains an
+explanation of the report structure and shows how to use the specific facilities of the PJR system.
+<br/><strong>Key words</strong>: abstract, bibliography, conclusion, introduction, project.</p>
+</section>
+<footer>
+<section>
+	<nav>
+		<ul>
+			<li><a href="./index.html">HOME</a></li>
+			<li><a href="./index2.html">Introduction</a></li>
+			<li><a href="./index2.html">Aperçu sur le système PJR</a></li>
+			<li><a href="./index3.html">Exemple d'inclusion de graphique</a></li>
+			<li><a href="./index3.html">Macros du système PJR</a></li>
+			<li><a href="https://www.rampacek.fr/www/IMG/pdf/pjx.pdf" target="_BLANK">lien vers le rapport original</a></li>
+		</ul>
+	</nav>
+	</section>
+</footer>
+
+</body>
+</html> 

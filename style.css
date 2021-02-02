@@ -1,0 +1,41 @@
+h1,h2{
+	color:#EAF2EB;
+	background-color: #8A0915;
+	text-align: center;
+}
+.Legende{
+    margin-left:350px;
+    font-size:14pt;
+}
+h3{font-size: 17pt;}
+.center {text-align: center;}
+.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+figcaption{margin-left:350px; }
+header {
+    margin-left: auto;
+   margin-right: auto;
+   width: 40%
+}
+.left_header{margin-left: 0;}
+nav{margin-left: 40px;}
+table {
+	border: solid;
+	margin-left: 35px;
+}
+tr{	background-color: grey;}
+td {background-color: lightgrey;}
+body {background-image: url(./img/5d95a7a52200008c01dca19a.jpeg);}
+img{
+	border:solid;
+	border-color: #8A0915;	
+}
+p{
+	font-size: 15pt;
+	text-indent: 35px;
+}
+ol{font-size: 14pt;}
+pre{font-size: 12pt;}
